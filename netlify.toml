@@ -1,2 +1,6 @@
 [build]
     publish = "."
+[[redirects]]
+    from = "/api/serverless/*"
+    to = "https://ron-swanson-quotes.herokuapp.com/v2/:splat"
+    status = 200
