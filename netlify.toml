@@ -1,6 +1,11 @@
 [build]
     publish = "."
+    functions = "func/"
 [[redirects]]
     from = "/api/serverless/*"
     to = "https://ron-swanson-quotes.herokuapp.com/v2/:splat"
+    status = 200
+[[redirects]]
+    from = "/api/yes"
+    to = "/.netlify/functions/yep"
     status = 200
